@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upper-bar {
+    padding: 5px;
+}
+
+.navbar {
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    color: #e7b961;
+    font-size: 30px;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #e7b961;
+}
+
+
+
+.about {
+    text-align: center;
+    padding: 45px 0;
+    background-image: url(../images/V9.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.about p {
+    color: white;
+    font-size: 18px;
+}
+
+.about p::before{
+    content: "";
+    background-image: url(../images/quotation-mark.png);
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    margin-right: 10px;
+}
+
+.about p::after{
+    content: "";
+    background-image: url(../images/right-quote-sign.png);
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    margin-left: 10px;
+}
+
+.about h3 {
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    color: #e7b961;
+}
+
+
+.wrapper {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+.item-box {
+    position: relative;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    transition: all .5s;
+    height: 450px;
+}
+
+.img-item img {
+    height: 220px;
+}
+
+.item-box:hover {
+    border-radius: 0;
+}
+
+.item-box .price-tag {
+    background-color: gray;
+    padding: 2px 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.item-box img {
+    width: 100%;
+    height: 220px;
+}
+
+.item-box h3 {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.item-box p {
+    text-align: center;
+    color: #e7b961;
+    height: 60px;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.item-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-box .date {
+    color: lightgray;
+    text-align: right;
+    position: relative;
+    top: 30px;
+}
+
+.item-box .btn {
+    width: 70px;
+    position: relative;
+    z-index: 999999999;
+    background-color: black;
+    color: #e7b961;
+    border-color: black;
+}
+
+.main-footer {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #e7b961;
+}
+
+.clear {
+    height: 30px;
+}
+
+.item-img img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*
+.img-item {
+    width: 100%;
+    height: 200px;
+}
+*/
+
+.label-danger {
+    background-color: #333;
+    color:  #e7b961;
+    border-radius: 0;
+}
+
+.item-info {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.item-info .desc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item-info .ull {
+    margin-bottom: 10px;
+}
+
+.item-info i {
+    margin-right: 10px;
+}
+
+.item-info a {
+    text-decoration: none;
+    color: #e7b961;
+}
+
+.item-info .fa-chevron-right {
+    margin-left: 10px;
+    color: #e7b961;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-left: 50px;
+  display: table;
+  margin: auto;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.01);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+    overflow: hidden;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+.add-comment .btn {
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+    color: #e7b961;
+    border-color: black;
+}
+
+.center-block {
+    width: 120px;
+}
+
+.lead {
+    margin-top: 50px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+}
+
+.comment-box p {
+    padding-top: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e7b961;
+}
+
+.user {
+    background-color: black;
+    color: #e7b961;
+    border-color: black;
+}
+
+#profile {
+    margin-top: 50px;
+    padding: 10px;
+    height: 450px;
+}
+
+.info {
+    background-color: rgb(240,240,240);
+    transform: rotate(5deg);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.info .label {
+    background-color: black;
+    color: #e7b961;
+}
+
+.info .text-center {
+    transform: rotate(-5deg);
+    padding: 10px;
+}
+
+.info i {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .clear {
+        height: 155px;
+    }
+}
+
+
+
+.prev {
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.item-box {
+    height: auto;
+}
+
+.item-box h3 {
+    color: lightgrey;
+}
+
+.create-ad {
+    padding: 20px;
+}
+
+.login-page form input {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.login-page .selected {
+    color: #e7b961;
+    font-size: 40px;
+}
+
+.login-page h1 {
+    color: #c0c0c0;
+}
+
+.login-page h1 span {
+    cursor: pointer;
+}
+
+.login-page .signup {
+    display: none;
+}
+
+.login-page .btn {
+    background-color: black;
+    color: #e7b961;
+    border-color: black;
+}
+
+.mb-2 {
+    margin-bottom: 15px;
+}
